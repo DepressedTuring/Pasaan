@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+{% load static %}
 {% block content %}
         <!-- Banner Section Start-->
         <section class="banner">
@@ -7,7 +8,7 @@
                     <div class="banner-nav">
                         <div class="banner-box">
                             <a href="{% url 'index' %}">خانه</a>
-                            <a href="{% url 'services' %}">خدمات</a>
+                            <a>خدمات</a>
                         </div>
                     </div>
                 </div>
@@ -29,31 +30,31 @@
                     <div class="col-sm-6 col-md-4 col-lg-3">
                         <div class="single-service">
                             <i ><img class="icon-service" src="{% static 'img/water.jpg' %}" alt=""></i>
-                            <h4><a href="#">آب و پساب</a></h4>
+                            <h4><a href="{% url 'water' %}">آب و پساب</a></h4>
                         </div>
                     </div>
                     <div class="col-sm-6 col-md-4 col-lg-3">
                         <div class="single-service">
                             <i ><img class="icon-service" src="{% static 'img/residue.jpg' %}" alt=""></i>
-                            <h4><a href="#">پسماند صنعتی</a></h4>
+                            <h4><a href="{% url 'industrialwaste' %}">پسماند صنعتی</a></h4>
                         </div>
                     </div>
                     <div class="col-sm-6 col-md-4 col-lg-3">
                         <div class="single-service">
                             <i ><img class="icon-service" src="{% static 'img/soils.jpg' %}" alt=""></i>
-                            <h4><a href="#"> خاک و فلزات سنگین</a></h4>
+                            <h4><a href="{% url 'soil' %}"> خاک و فلزات سنگین</a></h4>
                         </div>
                     </div>
                     <div class="col-sm-6 col-md-4 col-lg-3">
                         <div class="single-service">
                             <i ><img class="icon-service" src="{% static 'img/microbiology.jpeg' %}" alt=""></i>
-                            <h4><a href="#"> میکروبیولوژی و پسماند عفونی</a></h4>
+                            <h4><a href="{% url 'microbiology' %}"> میکروبیولوژی و پسماند عفونی</a></h4>
                         </div>
                     </div>
                     <div class="col-sm-6 col-md-4 col-lg-3">
                         <div class="single-service">
                             <i ><img class="icon-service" src="{% static 'img/techadv.png' %}" alt=""></i>
-                            <h4><a href="#">مشاوره فنی</a></h4>
+                            <h4><a href="{% url 'technical' %}">مشاوره فنی</a></h4>
                         </div>
                     </div>
                 </div>

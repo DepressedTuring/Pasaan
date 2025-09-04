@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+{% load static %}
 {% block content %}
 
         <!-- Banner Section Start-->
@@ -7,8 +8,8 @@
                 <div class="col-lg-12">
                     <div class="banner-nav">
                         <div class="banner-box">
-                            <a href="index-2.html">خانه</a>
-                            <a href="about.html">درباه ما</a>
+                            <a href="{% url 'index' %}">خانه</a>
+                            <a>درباه ما</a>
                         </div>
                     </div>
                 </div>
@@ -30,12 +31,11 @@
                         <p>
                             آزمایشگاه پایش صنعت آسیا نوین، با بیش از 18 سال سابقه در زمینه انجام آنالیز های محیط زیستی و به عنوان آزمایشگاه برتر و مجهزترین آزمایشگاه شمالغرب ایران، آماده ارائه خدمات از قبیل آنالیز فیزیکوشیمیایی، میکروبیولوژی، هوا و صوت، فلزات سنگین و خاک می‌باشد.
                         </p>
-                        <div class="read-more">
-                            <a href="#">بیشتر بخوانید</a>
+                        <div class="read-more"><br>
                         </div>
                     </div>
                     <div class="col-md-6">
-                        <img src="img/about.jpg" alt="" class="img-fluid">
+                        <img src="{% static 'img/about.jpg' %}" alt="" class="img-fluid">
                     </div>
                 </div>
 
@@ -43,7 +43,7 @@
                     <div class="col-md-4">
                         <div class="about-col">
                             <div class="img">
-                                <img src="img/about-mission.jpg" alt="" class="img-fluid">
+                                <img src="{% static 'img/about-mission.jpg' %}" alt="" class="img-fluid">
                                 <div class="icon"><i class="ion-ios-disc"></i></div>
                             </div>
                             <h2 class="title"><a href="#">دستاورد ها</a></h2>
@@ -51,7 +51,6 @@
                                 Aenean volutpat, dolor eu finibus rhoncus, elit felis vehicula nunc, ut pulvinar ex diam nec lacus. Phasellus sit amet rhoncus turpis. Aenean tincidunt auctor purus, ac sodales sapien sagittis
                             </p>
                             <div class="read-more">
-                                <a href="#">Read More</a>
                             </div>
                         </div>
                     </div>
@@ -59,7 +58,7 @@
                     <div class="col-md-4">
                         <div class="about-col">
                             <div class="img">
-                                <img src="img/about-vision.jpg" alt="" class="img-fluid">
+                                <img src="{% static 'img/about-vision.jpg' %}" alt="" class="img-fluid">
                                 <div class="icon"><i class="ion-ios-eye"></i></div>
                             </div>
                             <h2 class="title"><a href="#">دستاورد ها</a></h2>
@@ -67,7 +66,6 @@
                                 Aenean volutpat, dolor eu finibus rhoncus, elit felis vehicula nunc, ut pulvinar ex diam nec lacus. Phasellus sit amet rhoncus turpis. Aenean tincidunt auctor purus, ac sodales sapien sagittis
                             </p>
                             <div class="read-more">
-                                <a href="#">Read More</a>
                             </div>
                         </div>
                     </div>
@@ -75,7 +73,7 @@
                     <div class="col-md-4">
                         <div class="about-col">
                             <div class="img">
-                                <img src="img/about-objective.jpg" alt="" class="img-fluid">
+                                <img src="{% static 'img/about-objective.jpg' %}" alt="" class="img-fluid">
                                 <div class="icon"><i class="ion-ios-options"></i></div>
                             </div>
                             <h2 class="title"><a href="#">دستاورد ها</a></h2>
@@ -83,7 +81,6 @@
                                 Aenean volutpat, dolor eu finibus rhoncus, elit felis vehicula nunc, ut pulvinar ex diam nec lacus. Phasellus sit amet rhoncus turpis. Aenean tincidunt auctor purus, ac sodales sapien sagittis
                             </p>
                             <div class="read-more">
-                                <a href="#">Read More</a>
                             </div>
                         </div>
                     </div>
