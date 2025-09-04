@@ -6,12 +6,11 @@
 <head>
         <meta charset="utf-8">
         <title>پایش صنعت آسیا نوین</title>
+        <link rel="icon" href="{% static 'img/Logo.png' %}" type="image/x-icon">
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <meta content="" name="keywords">
         <meta content="" name="description">
  
-        <!-- Favicons -->
-        <link href="img/favicon.ico" rel="icon">
 
         <!-- Google Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300|Nunito:400,700&amp;display=swap" rel="stylesheet">
@@ -34,24 +33,24 @@
         <header class="header">
             <div class="container-fluid">
                 <div class="logo pull-left">
-                    <h1><a href="index.html"><img class="brand-name" src="{% static 'img/psn2-1.png' %}" alt="No image!"><img class="brand-logo" src="{% static 'img/Logo.png' %}" alt="Your Logo" /></a></h1>
+                    <h1><a href="{% url 'index' %}"><img class="brand-name" src="{% static 'img/psn2-1.png' %}" alt="No image!"><img class="brand-logo" src="{% static 'img/Logo.png' %}" alt="Your Logo" /></a></h1>
                     <!-- <a href="#"><img src="img/logo.png" alt="" title="" /></a>-->
                 </div>
 
                 <nav id="nav-menu-container">
                     <ul class="nav-menu">
-                        <li><a href="contact.html">تماس با ما</a></li>
-                        <li><a href="about.html">درباره ما</a></li>
-                        <li class="menu-has-children"><a href="services.html">خدمات آزمایشگاهی <i class="dicon ion-md-arrow-dropdown"></i></a>
+                        <li><a href="{% url 'contact' %}">تماس با ما</a></li>
+                        <li><a href="{% url 'about' %}">درباره ما</a></li>
+                        <li class="menu-has-children"><a href="{% url 'services' %}">خدمات آزمایشگاهی <i class="dicon ion-md-arrow-dropdown"></i></a>
                             <ul>
-                                <li><a href="water.html">آنالیز آب و پساب</a></li>
-                                <li><a href="industrialwaste.html">آنالیز پسماند صنعتی</a></li>
-                                <li><a href="soil.html">آنالیز خاک و فلزات سنگین</a></li>
-                                <li><a href="microbiology.html">آنالیز میکروبیولوژی و پسماند عفونی</a></li>
-                                <li><a href="technical.html">مشاوره فنی و مهندسی</a></li>
+                                <li><a href="{% url 'water' %}">آنالیز آب و پساب</a></li>
+                                <li><a href="{% url 'industrialwaste' %}">آنالیز پسماند صنعتی</a></li>
+                                <li><a href="{% url 'soil' %}">آنالیز خاک و فلزات سنگین</a></li>
+                                <li><a href="{% url 'microbiology' %}">آنالیز میکروبیولوژی و پسماند عفونی</a></li>
+                                <li><a href="{% url 'technical' %}">مشاوره فنی و مهندسی</a></li>
                             </ul>
                         </li>
-                        <li class="menu-active"><a href="index.html">صفحه اصلی</a></li>
+                        <li class="menu-active"><a href="{% url 'index' %}">صفحه اصلی</a></li>
                     </ul>
                 </nav>
             </div>
@@ -66,7 +65,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-3 col-md-6 footer-info">
-                            <h3><a href="index.html"><img class="brand-name" src="{% static 'img/psn2-2.png' %}" alt="No image!"><img class="brand-logo" src="{% static 'img/Logo.png' %}" alt="Your Logo" /></a></h3>
+                            <h3><a href="{% url 'index' %}"><img class="brand-name" src="{% static 'img/psn2-2.png' %}" alt="No image!"><img class="brand-logo" src="{% static 'img/Logo.png' %}" alt="Your Logo" /></a></h3>
                             <p>
                                 آزمایشگاه پایش صنعت آسیا نوین، با بیش از 18 سال سابقه در زمینه انجام آنالیز های محیط زیستی و به عنوان آزمایشگاه برتر و مجهزترین آزمایشگاه شمالغرب ایران، آماده ارائه خدمات از قبیل آنالیز فیزیکوشیمیایی، میکروبیولوژی، هوا و صوت، فلزات سنگین و خاک
                             </p>
