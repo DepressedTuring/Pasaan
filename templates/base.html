@@ -1,0 +1,129 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+        <meta charset="utf-8">
+        <title>پایش صنعت آسیا نوین</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+ 
+        <!-- Favicons -->
+        <link href="img/favicon.ico" rel="icon">
+
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300|Nunito:400,700&amp;display=swap" rel="stylesheet">
+
+        <!-- Bootstrap CSS File -->
+        <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+
+        <!-- Vendor CSS Files -->
+        <link href="{% static 'vendor/ionicons/css/ionicons.min.css' %}" rel="stylesheet">
+        <link href="{% static 'vendor/owlcarousel/assets/owl.carousel.min.css' %}" rel="stylesheet">
+        <link href="{% static 'vendor/lightbox/css/lightbox.min.css' %}" rel="stylesheet">
+
+        <!-- Main Stylesheet -->
+        <link href="{% static 'css/style.css' %}" rel="stylesheet">
+    </head>
+
+    <body>
+        <!-- Header Section Start -->
+        <header class="header">
+            <div class="container-fluid">
+                <div class="logo pull-left">
+                    <h1><a href="index.html"><img class="brand-name" src="img/psn2-1.png" alt="No image!"><img class="brand-logo" src="{% static 'img/Logo.png' %}" alt="Your Logo" /></a></h1>
+                    <!-- <a href="#"><img src="img/logo.png" alt="" title="" /></a>-->
+                </div>
+
+                <nav id="nav-menu-container">
+                    <ul class="nav-menu">
+                        <li><a href="contact.html">تماس با ما</a></li>
+                        <li><a href="about.html">درباره ما</a></li>
+                        <li class="menu-has-children"><a href="services.html">خدمات آزمایشگاهی <i class="dicon ion-md-arrow-dropdown"></i></a>
+                            <ul>
+                                <li><a href="water.html">آنالیز آب و پساب</a></li>
+                                <li><a href="industrialwaste.html">آنالیز پسماند صنعتی</a></li>
+                                <li><a href="soil.html">آنالیز خاک و فلزات سنگین</a></li>
+                                <li><a href="microbiology.html">آنالیز میکروبیولوژی و پسماند عفونی</a></li>
+                                <li><a href="technical.html">مشاوره فنی و مهندسی</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-active"><a href="index.html">صفحه اصلی</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <!-- Header Section End -->
+
+        {% block content %} {% endblock %}
+
+        <!-- Footer Start -->
+        <footer class="footer">
+            <div class="footer-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 footer-info">
+                            <h3><a href="index.html"><img class="brand-name" src="{% static 'img/psn2-2.png' %}" alt="No image!"><img class="brand-logo" src="{% static 'img/Logo.png' %}" alt="Your Logo" /></a></h3>
+                            <p>
+                                آزمایشگاه پایش صنعت آسیا نوین، با بیش از 18 سال سابقه در زمینه انجام آنالیز های محیط زیستی و به عنوان آزمایشگاه برتر و مجهزترین آزمایشگاه شمالغرب ایران، آماده ارائه خدمات از قبیل آنالیز فیزیکوشیمیایی، میکروبیولوژی، هوا و صوت، فلزات سنگین و خاک
+                            </p>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 footer-links">
+                            <h4>درباره ما</h4>
+                            <ul>
+                                <li><a href="#">خانه</a><i class="ion-md-arrow-dropleft"></i></li>
+                                <li><a href="#">خدمات آزمایشگاهی</a><i class="ion-md-arrow-dropleft"></i></li>
+                                <li><a href="#">درباره ما</a><i class="ion-md-arrow-dropleft"></i></li>
+                                <li><a href="#">تماس با ما</a><i class="ion-md-arrow-dropleft"></i></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 footer-contact">
+                            <h4>ارتباط با ما</h4>
+                            <p>
+                                اردبیل-میدان ایثار-ابتدای جاده خلخال-جنب ترمینال<br>
+                                <strong>تلفن :</strong>  2-33668131-045<br>
+                                <strong>ایمیل :</strong>  info@pasaan.ir<br>
+                                <strong>ساعت کاری :</strong>  روز های غیر تعطیل، ساعت 8 تا 14<br>
+                                <br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="copyright">
+                    <strong class="res-white">&copy;</strong> تمامی حقوق وبسایت متعلق به <strong class="res-white"> شرکت پایش صنعت آسیا نوین </strong> می‌باشد. 
+                </div>
+            </div>
+        </footer>
+        <!-- Footer End -->
+
+        <a href="#" class="back-to-top"><i class="ion-md-arrow-dropup"></i></a>
+
+        <!-- Vendor JS Files -->
+        <script data-cfasync="false" src="js/email-decode.min.js"></script><script src="{% static 'vendor/jquery/jquery.min.js' %}" type="f662d0b1744bd1f4a62fc011-text/javascript"></script>
+        <script src="{% static 'vendor/jquery/jquery-migrate.min.js' %}" type="f662d0b1744bd1f4a62fc011-text/javascript"></script>
+        <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}" type="f662d0b1744bd1f4a62fc011-text/javascript"></script>
+        <script src="{% static 'vendor/easing/easing.min.js' %}" type="f662d0b1744bd1f4a62fc011-text/javascript"></script>
+        <script src="{% static 'vendor/superfish/hoverIntent.js' %}" type="f662d0b1744bd1f4a62fc011-text/javascript"></script>
+        <script src="{% static 'vendor/superfish/superfish.min.js' %}" type="f662d0b1744bd1f4a62fc011-text/javascript"></script>
+        <script src="{% static 'vendor/waypoints/waypoints.min.js' %}" type="f662d0b1744bd1f4a62fc011-text/javascript"></script>
+        <script src="{% static 'vendor/touchSwipe/jquery.touchSwipe.min.js' %}" type="f662d0b1744bd1f4a62fc011-text/javascript"></script>
+        <script src="{% static 'vendor/counterup/counterup.min.js' %}" type="f662d0b1744bd1f4a62fc011-text/javascript"></script>
+        <script src="{% static 'vendor/owlcarousel/owl.carousel.min.js' %}" type="f662d0b1744bd1f4a62fc011-text/javascript"></script>
+        <script src="{% static 'vendor/isotope/isotope.pkgd.min.js' %}" type="f662d0b1744bd1f4a62fc011-text/javascript"></script>
+        <script src="{% static 'vendor/lightbox/js/lightbox.min.js' %}" type="f662d0b1744bd1f4a62fc011-text/javascript"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+
+
+        <!-- Main Javascript File -->
+        <script src="{% static 'js/main.js' %}" type="f662d0b1744bd1f4a62fc011-text/javascript"></script>
+
+    <script src="{% 'js/rocket-loader.min.js' %}" data-cf-settings="f662d0b1744bd1f4a62fc011-|49" defer></script></body>
+</html>
