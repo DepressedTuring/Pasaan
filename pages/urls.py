@@ -19,4 +19,12 @@ from django.urls import path
 from . import views
 urlpatterns = [
     path('', views.index, name="index"),
+    path('', views.about, name="about"),
+    path('', views.contact, name="contact"),
+    path('', views.water, name="water"),
+    path('', views.soil, name="soil"),
+    path('', views.microbiology, name="microbiology"),
+    path('', views.industrialwaste, name="industrialwaste"),
+    path('', views.technical, name="technical"),
+    path('', views.services, name="services"),
 ]
