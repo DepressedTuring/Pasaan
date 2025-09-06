@@ -587,6 +587,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 .about .about-col {
     background: #ffffff;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .about .about-col:hover {
@@ -1138,6 +1139,7 @@ body.mobile-nav-active #mobile-nav-toggle {
     border-radius: 0;
     overflow: hidden;
     transition: 0.3s;
+    padding-bottom: 10px;
 }
 
 .team .card:hover {
@@ -1667,6 +1669,10 @@ body.mobile-nav-active #mobile-nav-toggle {
         margin: 0 0 15px 0;
     }
     
+    .team {
+        margin: auto;
+        width: 80%;
+    }
 }
 
 @media (max-width: 61.9em) {
