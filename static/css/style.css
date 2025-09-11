@@ -1344,7 +1344,7 @@ body.mobile-nav-active #mobile-nav-toggle {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(129%);
+    transform: translateX(133%);
   }
 }
 
